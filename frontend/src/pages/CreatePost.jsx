@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserPlus, Linkedin, Github, Image, AlertCircle } from 'lucide-react';
-import Navbar from '../components/NavBar';
+
 export default function CreateCommunityMember() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -112,7 +112,7 @@ export default function CreateCommunityMember() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 flex items-center justify-center py-12 px-4">
       <div className="max-w-md w-full bg-white/80 backdrop-blur-sm rounded-xl p-8 border border-gray-200/50 shadow-lg">
-      <Navbar></Navbar>
+
         <div className="flex items-center gap-3 mb-6">
           <UserPlus className="w-8 h-8 text-indigo-600" />
           <h2 className="text-2xl font-bold text-gray-900">Join Our Community</h2>

@@ -74,26 +74,18 @@ export default function Navbar() {
       <div className="flex gap-6">
         <motion.div variants={linkVariants} initial="hidden" animate="visible" whileHover="hover">
           <Link
-            to="/features"
+            to="/home"
             className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white text-sm font-medium transition duration-300"
           >
-            Features
+            Home
           </Link>
         </motion.div>
         <motion.div variants={linkVariants} initial="hidden" animate="visible" whileHover="hover">
           <Link
-            to="/dashboard"
+            to="/"
             className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white text-sm font-medium transition duration-300"
           >
-            Dashboard
-          </Link>
-        </motion.div>
-        <motion.div variants={linkVariants} initial="hidden" animate="visible" whileHover="hover">
-          <Link
-            to="/community"
-            className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white text-sm font-medium transition duration-300"
-          >
-            Community
+            Sign In
           </Link>
         </motion.div>
       </div>

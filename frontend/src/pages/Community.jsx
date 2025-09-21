@@ -1,4 +1,3 @@
-// file: frontend/src/components/CommunityPage.jsx
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -9,8 +8,8 @@ import {
   Search,
   Plus,
   Trash2,
+  ArrowLeft,
 } from "lucide-react";
-import Navbar from "../components/NavBar";
 
 export default function CommunityPage() {
   const navigate = useNavigate();
@@ -153,7 +152,14 @@ export default function CommunityPage() {
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 overflow-hidden">
-      <Navbar></Navbar>
+      {/* Back to Features Button */}
+      <button
+        onClick={() => navigate("/features")}
+        className="fixed bottom-4 left-4 flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-medium transition-colors duration-200 shadow-md hover:shadow-lg"
+      >
+        <ArrowLeft className="w-5 h-5" /> Back to Features
+      </button>
+
       {/* Floating dots background */}
       <div className="absolute inset-0 -z-10">
         {[...Array(30)].map((_, i) => {

@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import  FloatingButton  from '../components/FloatingButton';
 import Skeleton from 'react-loading-skeleton';
-import Navbar from '../components/NavBar';
+
 
 const messageVariants = {
   hidden: { opacity: 0, y: 30, scale: 0.95 },
@@ -301,7 +301,7 @@ export default function Dashboard() {
   return (
     <div className="flex min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-teal-50/50 text-gray-800 relative overflow-hidden">
       <AnimatedBackground />
-      <Navbar></Navbar>
+      
       {/* Mobile Overlay */}
       <AnimatePresence>
         {sidebarOpen && (
@@ -341,7 +341,7 @@ export default function Dashboard() {
             style={{ fontFamily: 'Inter, sans-serif' }}
             whileHover={{ scale: 1.05 }}
           >
-            HelloMind AI
+            YourTutor
           </motion.h2>
           <motion.button 
             onClick={() => setSidebarOpen(false)} 
@@ -529,7 +529,7 @@ export default function Dashboard() {
             style={{ fontFamily: 'Inter, sans-serif' }}
             whileHover={{ scale: 1.05 }}
           >
-            HelloMind AI
+     yourTutor
           </motion.h1>
           <StatusIndicator status={backendStatus} />
         </motion.header>
@@ -556,7 +556,7 @@ export default function Dashboard() {
                     }}
                   >
                     <h2 className="text-xl md:text-2xl font-bold mb-4 bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent" style={{ fontFamily: 'Inter, sans-serif' }}>
-                      👋 Welcome to HelloMind AI
+                      👋 Welcome to yourTutor AI
                     </h2>
                   </motion.div>
                   <motion.p 
@@ -614,7 +614,7 @@ export default function Dashboard() {
                           🧠
                         </motion.div>
                         <h3 className="text-sm md:text-lg font-bold bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent" style={{ fontFamily: 'Inter, sans-serif' }}>
-                          HelloMind AI
+                       yourTutor AI
                         </h3>
                       </motion.div>
                       <motion.div 
